@@ -63,7 +63,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
   }, [farm, setStartTime])
 
   const getEndTime = useCallback(async () => {
-    const endTime = await getPoolEndTime(farm.contract)
+    //const endTime = await getPoolEndTime(farm.contract)
     const endTime = 1598270400;
     setEndTime((endTime))
   }, [farm, setStartTime])
