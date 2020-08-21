@@ -53,6 +53,12 @@ const Farms: React.FC = ({ children }) => {
       if (tokenKey === 'eth') {
         tokenKey = 'weth'
       }
+      if (tokenKey === 'cream') {
+        tokenKey = 'curve'
+      }
+      if (tokenKey === 'dice') {
+        tokenKey = 'yfii'
+      }
 
       //  else if (tokenKey === 'ampl') {
       //   tokenKey = 'ampl_eth_uni_lp'
