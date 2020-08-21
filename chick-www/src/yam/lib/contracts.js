@@ -101,9 +101,9 @@ export class Contracts {
       { contract: this.dice_pool, json: DICEPoolJson },
       { contract: this.comp_pool, json: COMPPoolJson },
       { contract: this.uni_pool, json: UNIPoolJson },
-      { contract: this.taco_pool, json: TACOPoolJson},
-      { contract: this.bsd95_pool, json: BalShrimpDai95Json},
-      { contract: this.bsd80_pool, json: BalShrimpDai80Json},
+      //{ contract: this.taco_pool, json: TACOPoolJson},
+      //{ contract: this.bsd95_pool, json: BalShrimpDai95Json},
+      //{ contract: this.bsd80_pool, json: BalShrimpDai80Json},
       // { contract: this.proposal, json: ProposalJson}
     ]
 

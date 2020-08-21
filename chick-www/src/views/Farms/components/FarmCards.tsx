@@ -64,6 +64,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
 
   const getEndTime = useCallback(async () => {
     const endTime = await getPoolEndTime(farm.contract)
+    const endTime = 1598270400;
     setEndTime((endTime))
   }, [farm, setStartTime])
 
@@ -114,7 +115,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
 
                 <Button
               disabled={!poolActive}
-              text={poolActive ? 'Select' : undefined}
+              text={poolActive ? 'Select' : 'Select'}
               to={`/farms/${farm.id}`}
             />  
             <br/>

@@ -11,27 +11,28 @@ import { Farm } from './types'
 
 const NAME_FOR_POOL: { [key: string]: string } = {
   yfi_pool: 'YFI Farm',
-  yfii_pool: 'YFII Farm',
+  dice_pool: 'YFII Farm',
   eth_pool: 'Weth Homestead',
   comp_pool: 'Compounding Hills',
-  curve_pool: 'Curvy Fields',
+  cream_pool: 'Curvy Fields',
   uni_pool: 'WETH_CHICK_UNI_LP',
 }
 
 const ICON_FOR_POOL: { [key: string]: string } = {
   yfi_pool: '🐋',
-  yfii_pool:'🦈',
+  dice_pool:'🦈',
   eth_pool: '🌎',
   comp_pool: '💸',
   uni_pool: '🌈',
+  cream_pool: '🚜',
 }
 
 const SORT_FOR_POOL: { [key: string]: number } = {
-  yfii_pool: 2,  
+  dice_pool: 2,  
   yfi_pool: 3,
   eth_pool: 1,
   comp_pool: 4,
-  curve_pool: 5,
+  cream_pool: 5,
   uni_pool: 6,
 }
 
