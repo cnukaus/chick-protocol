@@ -56,7 +56,7 @@ const Stats: React.FC<StatsProps> = ({
        <Card>
         <CardContent>
           <StyledStat>
-            <StyledValue>$100</StyledValue>
+            <StyledValue>$1.00</StyledValue>
             <Label text="Target Price" />
           </StyledStat>
         </CardContent>

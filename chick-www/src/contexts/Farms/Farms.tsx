@@ -60,7 +60,15 @@ const Farms: React.FC = ({ children }) => {
       if (tokenKey === 'dice') {
         tokenKey = 'yfii'
       }
-
+      if (tokenKey === 'taco') {
+        continue;
+      }
+      if (tokenKey === 'bsd95') {
+        continue;
+      }
+      if (tokenKey === 'bsd80') {
+        continue;
+      }
       //  else if (tokenKey === 'ampl') {
       //   tokenKey = 'ampl_eth_uni_lp'
       // } else if (tokenKey === 'scrv') {
