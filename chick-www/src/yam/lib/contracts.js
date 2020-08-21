@@ -57,15 +57,11 @@ export class Contracts {
     this.bsd95 = new this.web3.eth.Contract(ERC20Json.abi);
     this.bsd80 = new this.web3.eth.Contract(ERC20Json.abi);
 
-    this.yfi_pool = new this.web3.eth.Contract(YFIPoolJson.abi);
+    this.yfi_pool = new this.web3.eth.Contract(WETHPoolJson.abi);
     this.eth_pool = new this.web3.eth.Contract(WETHPoolJson.abi);
-    this.cream_pool = new this.web3.eth.Contract(CREAMPoolJson.abi);
-    this.comp_pool = new this.web3.eth.Contract(COMPPoolJson.abi);
-    this.dice_pool = new this.web3.eth.Contract(DICEPoolJson.abi);
-    this.taco_pool = new this.web3.eth.Contract(TACOPoolJson.abi);
-    this.uni_pool = new this.web3.eth.Contract(UNIPoolJson.abi);
-    this.bsd95_pool = new this.web3.eth.Contract(BalShrimpDai95Json.abi)
-    this.bsd80_pool = new this.web3.eth.Contract(BalShrimpDai80Json.abi)
+    this.yfii_pool = new this.web3.eth.Contract(WETHPoolJson.abi);
+    this.comp_pool = new this.web3.eth.Contract(WETHPoolJson.abi);
+    this.curve_pool = new this.web3.eth.Contract(WETHPoolJson.abi);
     this.proposal = new this.web3.eth.Contract(ProposalJson.abi);
     
     this.erc20 = new this.web3.eth.Contract(ERC20Json.abi);
@@ -96,14 +92,12 @@ export class Contracts {
       { contract: this.gov, json: YAMGovJson },
       { contract: this.timelock, json: YAMTimelockJson },
       { contract: this.eth_pool, json: WETHPoolJson },
-      { contract: this.yfi_pool, json: YFIPoolJson },
-      { contract: this.cream_pool, json: CREAMPoolJson },
-      { contract: this.dice_pool, json: DICEPoolJson },
-      { contract: this.comp_pool, json: COMPPoolJson },
-      { contract: this.uni_pool, json: UNIPoolJson },
-      { contract: this.taco_pool, json: TACOPoolJson},
-      { contract: this.bsd95_pool, json: BalShrimpDai95Json},
-      { contract: this.bsd80_pool, json: BalShrimpDai80Json},
+      { contract: this.yfi_pool, json: WETHPoolJson },
+      { contract: this.yfii_pool, json: WETHPoolJson },
+      { contract: this.curve_pool, json: WETHPoolJson },
+      { contract: this.comp_pool, json: WETHPoolJson },
+      { contract: this.uni_pool, json: WETHPoolJson },
+      //xixi
       // { contract: this.proposal, json: ProposalJson}
     ]
 
@@ -117,11 +111,8 @@ export class Contracts {
     this.yfi.options.address = addressMap["YFI"];
     this.weth.options.address = addressMap["WETH"];
     this.comp.options.address = addressMap["COMP"];
-    this.taco.options.address = addressMap["TACO"];
-    this.bsd95.options.address = addressMap["BSD95"];
-    this.bsd80.options.address = addressMap["BSD80"];
-    this.dice.options.address = addressMap["DICE"];
-    this.cream.options.address = addressMap["CREAM"];
+    this.yfii.options.address = addressMap["YFII"];
+    this.curve.options.address = addressMap["CURVE"];
     this.uni.options.address = addressMap["UNI"];
     this.uni_fact.options.address = addressMap["uniswapFactoryV2"];
     this.uni_router.options.address = addressMap["UNIRouter"];
