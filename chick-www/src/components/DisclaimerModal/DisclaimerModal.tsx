@@ -25,7 +25,7 @@ const DisclaimerModal: React.FC<DisclaimerModal> = ({ onConfirm, onDismiss }) =>
         <div>
           <p>Audits: None. (This project is in beta. Use at your own risk.)</p>
           <p>🚨 Chicks farm will start on 2020/08/24 12:00:00 UTC+0  🚨</p>
-          <p>🐣 At that time 250,000 CHICK/week will be released for each farm 🐣</p>
+          <p>🐣 At stage 1 250,000 CHICK/week will be released for each farm 🐣</p>
         </div>
       )
     } else {

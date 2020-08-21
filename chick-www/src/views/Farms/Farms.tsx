@@ -26,7 +26,7 @@ const Farms: React.FC = () => {
         <>
           {/* <Route exact path={path}> */}
             <PageHeader
-              icon={<img src={farmer} height="96" />}
+              icon="🐣"
               subtitle="Earn CHICK tokens by providing liquidity."
               title="Select a chick farm."
             />
