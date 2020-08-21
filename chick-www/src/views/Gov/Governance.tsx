@@ -46,7 +46,7 @@ const Vote: React.FC = () => {
 
   return (
     <Page>
-      <PageHeader icon="🦐" subtitle="Vote for changes here" />
+      <PageHeader icon="🐣" subtitle="Vote for changes here" />
       <div style={{
         alignItems: 'center',
         display: 'flex',
