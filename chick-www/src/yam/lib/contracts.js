@@ -53,9 +53,7 @@ export class Contracts {
     this.curve = new this.web3.eth.Contract(ERC20Json.abi);
     this.yam = new this.web3.eth.Contract(YAMJson.abi);
     this.uni = new this.web3.eth.Contract(ERC20Json.abi);
-    this.taco = new this.web3.eth.Contract(ERC20Json.abi);
-    this.bsd95 = new this.web3.eth.Contract(ERC20Json.abi);
-    this.bsd80 = new this.web3.eth.Contract(ERC20Json.abi);
+
 
     this.yfi_pool = new this.web3.eth.Contract(WETHPoolJson.abi);
     this.eth_pool = new this.web3.eth.Contract(WETHPoolJson.abi);
@@ -132,15 +130,12 @@ export class Contracts {
     account
   ) {
     this.yfi.options.from = account;
-    this.dice.options.from = account;
-    this.cream.options.from = account;
+    this.yfii.options.from = account;
     this.yam.options.from = account;
     this.comp.options.from = account;
     this.weth.options.from = account;
     this.uni.options.from = account;
-    this.taco.options.from = account;
-    this.bsd95.options.from = account;
-    this.bsd80.options.from = account;
+    this.curve.options.from = account;
   }
 
   async callContractFunction(
