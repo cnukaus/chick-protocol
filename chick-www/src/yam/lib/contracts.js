@@ -49,8 +49,8 @@ export class Contracts {
     this.yfi = new this.web3.eth.Contract(ERC20Json.abi);
     this.UNIAmpl = new this.web3.eth.Contract(ERC20Json.abi);
     this.comp = new this.web3.eth.Contract(ERC20Json.abi);
-    this.dice = new this.web3.eth.Contract(ERC20Json.abi);
-    this.cream = new this.web3.eth.Contract(ERC20Json.abi);
+    this.yfii = new this.web3.eth.Contract(ERC20Json.abi);
+    this.curve = new this.web3.eth.Contract(ERC20Json.abi);
     this.yam = new this.web3.eth.Contract(YAMJson.abi);
     this.uni = new this.web3.eth.Contract(ERC20Json.abi);
     this.taco = new this.web3.eth.Contract(ERC20Json.abi);
@@ -122,12 +122,9 @@ export class Contracts {
       {"tokenAddr": this.yfi.options.address, "poolAddr": this.yfi_pool.options.address},
       {"tokenAddr": this.weth.options.address, "poolAddr": this.eth_pool.options.address},
       {"tokenAddr": this.comp.options.address, "poolAddr": this.comp_pool.options.address},
-      {"tokenAddr": this.dice.options.address, "poolAddr": this.dice_pool.options.address},
-      {"tokenAddr": this.cream.options.address, "poolAddr": this.cream_pool.options.address},
+      {"tokenAddr": this.curve.options.address, "poolAddr": this.curve_pool.options.address},
+      {"tokenAddr": this.yfii.options.address, "poolAddr": this.yfii_pool.options.address},
       {"tokenAddr": this.uni.options.address, "poolAddr": this.uni_pool.options.address},
-      {"tokenAddr": this.taco.options.address, "poolAddr": this.taco_pool.options.address},
-      {"tokenAddr": this.bsd95.options.address, "poolAddr": this.bsd95_pool.options.address},
-      {"tokenAddr": this.bsd80.options.address, "poolAddr": this.bsd80_pool.options.address},
     ]
   }
 
